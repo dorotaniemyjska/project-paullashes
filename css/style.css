@@ -27,7 +27,7 @@ body {
     overflow: hidden;
     width: 100%;
     /*    width:1903px*/
-    background-image:url(img/2.jpg);
+    background-image:url(../img/2.jpg);
     background-size: cover;
     background-position: center left;
     position: relative;
@@ -99,6 +99,19 @@ body {
 }
 
 
+@media (max-width:533px) {
+    .header-title {
+        font-size: 75px;
+    }
+
+    .header-subtitle {
+        font-size: 18px;
+    }
+    
+  .navigation a {
+    display: block;
+}
+  }
 
 
-
+  
