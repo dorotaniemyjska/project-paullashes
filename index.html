@@ -10,16 +10,12 @@
     <meta name="robots" content="index,follow">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
     <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Dancing+Script:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='https://unpkg.com/flickity@2/dist/flickity.min.css'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- nagłówek i obrazek -->
+    <!--header & img -->
 
     <section class="header-splash">
         <div class="header-intro">
@@ -29,7 +25,7 @@
         </div>
     </section>
 
-<!-- nawigacja -->
+<!-- navigation -->
 
 
         <nav class="navigation">
@@ -46,9 +42,104 @@
 
             </div>
         </nav>
+<section class="page-content">
+<!-- slider -->
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="img/3.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="img/4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="img/5.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+        <img src="img/6.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/7.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/8.jpg" style="width:100%">
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+      <span class="dot" onclick="currentSlide(6)"></span>  
+    </div>
+    
+
+<!-- gallery -->
+
+<section class="gallery-wrapper">
+    <div class="gallery-img">
+        <div><img src="img/2.jpg"></div>
+        <div><img src="img/2.jpg"></div>
+        <div><img src="img/2.jpg"></div>
+    </div>
+</section>
+
+</section>
 
 
 
+
+
+
+
+
+
+
+<!-- parallax -->
+
+
+
+
+
+
+
+
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
 </body>
 
 </html>
