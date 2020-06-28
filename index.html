@@ -15,6 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Dancing+Script:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -31,192 +32,191 @@
     </section>
 
 
-<!-- navigation -->
+    <!-- navigation -->
+    <nav class="navigation">
+        <div class="topnav" id="myTopnav">
+            <a href="#about">O mnie</a>
+            <a href="#article-wrapper">Paleta usług</a>
+            <a href="#slideshow">Galeria</a>
+            <a href="#contact">Kontakt</a>
+        </div>
+    </nav>
+    <!-- content page -->
+
+    <section class="page-content">
 
 
-        <nav class="navigation">
-            <div class="topnav" id="myTopnav">
-                <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a> -->
-                <!--                <a href="#"></a>-->
-                <a href="#about">O mnie</a>
-                <a href="#features">Paleta usług</a>
-                <a href="#quotes">Opinie</a>
-                <a href="#gallery">Galeria</a>
-                <a href="#contact">Kontakt</a>
+        <!-- slider -->
+
+        <div class="slideshow-container" id="slideshow">
+            <div class="mySlides fade">
+                <img src="img/3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/5.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/6.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/7.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/8.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+
+        <!-- gallery -->
+
+        <section class="gallery-wrapper">
+            <div class="gallery-img">
+                <div><img src="img/3.jpg"></div>
+                <div><img src="img/3.jpg"></div>
+                <div><img src="img/3.jpg"></div>
+            </div>
+        </section>
+
+        <section class="main-content">
+            <div class="article-left">
+                <h2 class="section-title">Paleta usług</h2>
+                <div class="article-wrapper" id="article-wrapper">
+                    <article>
+                        <h3 class="article-title">Metoda klasyczna 1:1</h3>
+                        <img src="img/metoda1.jpg" />
+                        <p>Jest to metoda przedłużenia rzęs naturalnych. Ponieważ metoda 1:1 polega na przyklejaniu pojedynczej rzęsy syntetycznej do jednej naturalnej, czyli każda naturalna rzęsa ma doklejona sztuczna. Efekt ten jest bardzo naturalny ale może być również bardzo spektakularny. Wszystko zależy od doboru rzęsy syntetycznej jak i również jaki efekt chce uzyskać klientka.
+                            Rzęsa syntetyczna daje duży efekt poniewaz cała od początku do końca jest czarna a rzęsa naturalna raczej nie ma pełnej czerni. Taka metoda utrzymuje się od 2-4 tyg. W zależności ile jest rzęs naturalnych. Więc zaleca się uzupełnianie właśnie w tym czasie. Sztuczne rzęsy są bardzo wygodna alternatywa na piękne spojrzenie o każdej porze dnia i nocy.</p>
+                    </article>
+                    <article>
+                        <h3 class="article-title">Metoda objętościowa 2-6D</h3>
+                        <img src="img/metoda2.jpeg" />
+                        <p>Jest to metoda przedłużenia oraz zagęszczania rzęs naturalnych. Ponieważ metoda ta polega na przyklejaniu od 2 do 6 rzęs syntetycznych do jednej naturalnej w formie tak zwanego wachlarza. Taki wachlarz robi się ręcznie. I zawsze indywidualnie do potrzeb klientki i efektu jaki chce uzyskać. Taka metoda utrzymuje się od 3-4tyg. W zależności ile jest rzęs naturalnych.
+                            Więc zaleca się uzupełnianie właśnie w tym czasie. Metody objętościowe 2-3D poleca się panią które mają słabe swoje naturalne rzęsy a lubię mieć podkreślone oko.Taka metoda można zakryć niedoskonałości np. ubytku ( dziury) w rzęsach naturalnych, zakryć opadajaca powieke lub uwydatnic małe oczy. Metoda 4-6D poleca się dla pan które lubią mocny efekt. Oczywiście takie metody również zasłoną nam niedoskonałości związane z rzesami jak przy metodzie 2-3D. Lecz efekt będzie mocniejszy. Warto jednak pamiętać że u kazdej klientki efekt będzie inny. Ponieważ każde oko każda powieke oraz ilość rzęs jest indywidualna.</p>
+                    </article>
+                    <article>
+                        <h3 class="article-title">Henna rzęs i stylizacja brwi</h3>
+                        <img src="img/7.jpg" />
+                        <p>Lorem ipsum dolor sit amet, mea et vocent iriure appetere, veniam perpetua interpretaris eam ad. Vim aliquando adversarium ea. Ut mea justo explicari principes. Sumo dicat conceptam eu mei, duis tation consequuntur ea usu. Ferri discere docendi no has, sed persius bonorum accusata eu, vim ne soleat regione nominati.
+                            Lorem ipsum dolor sit amet, mea et vocent iriure appetere, veniam perpetua interpretaris eam ad. Vim aliquando adversarium ea. Ut mea justo explicari principes. Sumo dicat conceptam eu mei, duis tation.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="sidebar-right">
+                <div class="about" id="about">
+                    <h4>About Me</h4>
+                    <img src="img/22.jpg">
+                    <h6>Stylistka rzęs</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, totam, cupiditate! Quaerat omnis ea at fugit blanditiis natus, enim reiciendis assumenda magni aut, minima dolorum, id ducimus fugiat itaque minus!
+                    </p>
+                </div>
+                <div class="instagram-widget">
+                    <h4>Instagram</h4>
+                    <div class="instagram-box">
+                        <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                        <iframe src="https://snapwidget.com/embed/840479" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
+                    </div>
+                </div>
+                <div class="contact" id="contact">
+                    <h4>Kontakt</h4>
+                    <i class="fas fa-map-marker-alt"></i><br />
+                    <span class="title">Studio Paullashes</span></br>
+                    Staszica 18</br>
+                    01-189 Warszawa</br>
+                    <i class="far fa-clock"></i></br>
+                    <span class="title">pn - pt</span></br>
+                    09:00 - 18:00</br>
+                    <span class="title">sb</span></br>
+                    09:00 - 16:00
+                </div>
 
             </div>
-        </nav>
-<!-- content page -->
+            <div class="clearfix"></div>
+        </section>
+    </section>
 
-<section class="page-content">
-<!-- slider -->
+    <!-- parallax -->
+    <section class="statement">
+    </section>
 
-<div class="slideshow-container">
-    <div class="mySlides fade">
-      <img src="img/3.jpg" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-      <img src="img/4.jpg" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-      <img src="img/5.jpg" style="width:100%">
-    </div>
-    <div class="mySlides fade">
-        <img src="img/6.jpg" style="width:100%">
-      </div>
-      <div class="mySlides fade">
-        <img src="img/7.jpg" style="width:100%">
-      </div>
-      <div class="mySlides fade">
-        <img src="img/8.jpg" style="width:100%">
-      </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span> 
-      <span class="dot" onclick="currentSlide(5)"></span> 
-      <span class="dot" onclick="currentSlide(6)"></span>  
-    </div>
-    
+    <!-- social media -->
+    <section class="social-media">
+        <div class="wrapper-media">
+            <a href="https://www.facebook.com/Paullashes-stylizacja-rz%C4%99s-1910067939295826/"><i class="fab fa-facebook-f"></i>FACEBOOK</a>
+            <a href="https://www.instagram.com/paullashes/"><i class="fab fa-instagram"></i>INSTAGRAM</a>
+            <a href="paullashes@gmail.com"><i class="fas fa-envelope"></i></i>E-MAIL</a>
+        </div>
+    </section>
 
-<!-- gallery -->
+    <!-- footer -->
 
-<section class="gallery-wrapper">
-    <div class="gallery-img">
-        <div><img src="img/3.jpg"></div>
-        <div><img src="img/3.jpg"></div>
-        <div><img src="img/3.jpg"></div>
-    </div>
-</section>
+    <section class="footer">
+        <div class="footer-wrapper">
+            <div class="logo">
+                <img src="img/logo10.png" />
+            </div>
 
-<section class="main-content">
-  <div class="article-left">
-    <h2 class="section-title">Paleta usług</h2>
-    <div class="article-wrapper">
-        <article>
-            <h3 class="article-title">Metoda klasyczna 1:1</h3>
-            <img src="img/metoda1.jpg"/>
-            <p>Jest to metoda przedłużenia rzęs naturalnych. Ponieważ metoda 1:1 polega na przyklejaniu pojedynczej rzęsy syntetycznej do jednej naturalnej, czyli każda naturalna rzęsa ma doklejona sztuczna. Efekt ten jest bardzo naturalny ale może być również bardzo spektakularny. Wszystko zależy od doboru rzęsy syntetycznej jak i również jaki efekt chce uzyskać klientka.
-                Rzęsa syntetyczna daje duży efekt poniewaz cała od początku do końca jest czarna a rzęsa naturalna raczej nie ma pełnej czerni. Taka metoda utrzymuje się od 2-4 tyg. W zależności ile jest rzęs naturalnych. Więc zaleca się uzupełnianie właśnie w tym czasie. Sztuczne rzęsy są bardzo wygodna alternatywa na piękne spojrzenie o każdej porze dnia i nocy.</p>
-        </article>
-        <article>
-            <h3 class="article-title">Metoda objętościowa 2-6D</h3>
-            <img src="img/metoda2.jpeg"/>
-            <p>Jest to metoda przedłużenia oraz zagęszczania rzęs naturalnych. Ponieważ metoda ta polega na przyklejaniu od 2 do 6 rzęs syntetycznych do jednej naturalnej w formie tak zwanego wachlarza. Taki wachlarz robi się ręcznie. I zawsze indywidualnie do potrzeb klientki i efektu jaki chce uzyskać. Taka metoda utrzymuje się od 3-4tyg. W zależności ile jest rzęs naturalnych.
-                Więc zaleca się uzupełnianie właśnie w tym czasie. Metody objętościowe 2-3D poleca się panią które mają słabe swoje naturalne rzęsy a lubię mieć podkreślone oko.Taka metoda można zakryć niedoskonałości np. ubytku ( dziury) w rzęsach naturalnych, zakryć opadajaca powieke lub uwydatnic małe oczy. Metoda 4-6D poleca się dla pan które lubią mocny efekt. Oczywiście takie metody również zasłoną nam niedoskonałości związane z rzesami jak przy metodzie 2-3D. Lecz efekt będzie mocniejszy. Warto jednak pamiętać że u kazdej klientki efekt będzie inny. Ponieważ każde oko każda powieke oraz ilość rzęs jest indywidualna.</p>
-        </article>
-        <article>
-            <h3 class="article-title">Henna rzęs i stylizacja brwi</h3>
-            <img src="img/7.jpg" />
-            <p>Lorem ipsum dolor sit amet, mea et vocent iriure appetere, veniam perpetua interpretaris eam ad. Vim aliquando adversarium ea. Ut mea justo explicari principes. Sumo dicat conceptam eu mei, duis tation consequuntur ea usu. Ferri discere docendi no has, sed persius bonorum accusata eu, vim ne soleat regione nominati.
-                Lorem ipsum dolor sit amet, mea et vocent iriure appetere, veniam perpetua interpretaris eam ad. Vim aliquando adversarium ea. Ut mea justo explicari principes. Sumo dicat conceptam eu mei, duis tation.</p>
-        </article>
-    </div>
-  </div>
-  <div class="sidebar-right">
-    <div class="about">
-      <h4>About Me</h4>
-      <img src="img/22.jpg">
-      <h6>Stylistka rzęs</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, totam, cupiditate! Quaerat omnis ea at fugit blanditiis natus, enim reiciendis assumenda magni aut, minima dolorum, id ducimus fugiat itaque minus!
-      </p>
-    </div>
-    <div class="instagram-widget">
-    <h4>Instagram</h4>
-    <div class="instagram-box">
-        <script src="https://snapwidget.com/js/snapwidget.js"></script>
-        <iframe src="https://snapwidget.com/embed/840479" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
-    </div>
-    </div>
-    <div class="contact">
-    <h4>Kontakt</h4>
-    <i class="fas fa-map-marker-alt"></i><br />
-    <span class="title">Studio Paullashes</span></br>
-    Staszica 18</br>
-    01-189 Warszawa</br>
-    <i class="far fa-clock"></i></br>
-    <span class="title">pn - pt</span></br>
-    09:00 - 18:00</br>
-    <span class="title">sb</span></br>
-    09:00 - 16:00
-    </div>
-    
-  </div>
-  <div class="clearfix"></div>
-</section>
-</section>
-
-<!-- parallax -->
-<section class="statement">
-</section>
-
-<!-- social media -->
-<section class="social-media">
-  <div class="wrapper-media">
-      <a href="https://www.facebook.com/Paullashes-stylizacja-rz%C4%99s-1910067939295826/"><i class="fab fa-facebook-f"></i>FACEBOOK</a>
-      <a href="https://www.instagram.com/paullashes/"><i class="fab fa-instagram"></i>INSTAGRAM</a>
-      <a href="paullashes@gmail.com"><i class="fas fa-envelope"></i></i>E-MAIL</a>
-  </div>
-</section>
-
-<!-- footer -->
-
-<section class="footer">
-  <div class="footer-wrapper">
-      <div class="logo">
-          <img src="img/logo10.png" />
-      </div>
-
-      <div class="copyright">
-          <p>&copy; Copyright 2019 PAULLASHES. Wszelkie prawa zastrzeżone</p>
-      </div>
-      <div class="go-up">
-          <div>
-            <i class="fas fa-chevron-up"></i>
-          </div>
-      </div>
-  </div>
-</section>
+            <div class="copyright">
+                <p>&copy; Copyright 2019 PAULLASHES. Wszelkie prawa zastrzeżone</p>
+            </div>
+            <div class="go-up">
+                <div>
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-<script type="text/javascript" src="./js/app.js"></script>
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
     </script>
 </body>
 
