@@ -28,7 +28,7 @@ body {
 .header-splash {
     height: 450px;
     overflow: hidden;
-    width: 100%;
+    width: 100vw;
     /*    width:1903px*/
     background-image: url(../img/1.jpg);
     background-size: cover;
@@ -91,26 +91,6 @@ body {
 
     .page-content {
         width: 375px;
-    }
-
-    .slideshow-container {
-        max-width: 375px;
-    }
-
-    .next {
-        left: 305px;
-    }
-
-    .mySlides {
-        display: none;
-        width: 340px;
-        margin: 0 10px;
-    }
-
-    .dot {
-        position: relative;
-        top: -60px;
-        left: -360px;
     }
 
     .gallery-wrapper .gallery-img img {
@@ -246,107 +226,10 @@ body {
 /*slider*/
 
 
-/* Hide the images by default */
-/*
-.mySlides {
-    display: none;
-}
-*/
-
-/* Next & previous buttons */
-/*
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    -webkit-transition: 0.6s ease;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-*/
-
-/* Position the "next button" to the right */
-/*
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-*/
-
-/* On hover, add a black background color with a little bit see-through */
-/*
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-*/
-
-
-/* The dots*/
-/*
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    -webkit-transition: background-color 0.6s ease;
-    transition: background-color 0.6s ease;
-
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-Fading animation 
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-*/
-
-
 /**/
 
 .slider {
-    width: 1100px;
+    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -356,7 +239,7 @@ Fading animation
 }
 
 .slider__container {
-    max-width: 100%;
+    max-width:1100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -364,6 +247,7 @@ Fading animation
     -ms-flex-align: center;
     align-items: center;
     position: relative;
+    
 }
 
 .slider__button {
