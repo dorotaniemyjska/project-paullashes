@@ -45,9 +45,9 @@
 
     <section class="page-content">
 
-
         <!-- slider -->
 
+        <!--
         <div class="slideshow-container" id="slideshow">
             <div class="mySlides fade">
                 <img src="img/3.jpg" style="width:100%">
@@ -68,20 +68,52 @@
                 <img src="img/8.jpg" style="width:100%">
             </div>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1)"><img src="/img/back.png"></a>
+            <a class="next" onclick="plusSlides(1)"><img src="/img/next.png"></a>
 
         </div>
         <br>
 
         <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
             <span class="dot" onclick="currentSlide(5)"></span>
             <span class="dot" onclick="currentSlide(6)"></span>
         </div>
+-->
+        <div class="slider" id="slideshow">
+            <div class="slider__container">
+                <button class="slider__button slider__button--prev" data-button-prev></button>
+                <figure class="slide" data-slide></figure>
+                <button class="slider__button slider__button--next" data-button-next></button>
+                <div style="text-align:center">
+                <span class="slider__dot" data-dot><i class='fas fa-circle'></i></span>
+                <span class="slider__dot" data-dot><i class='far fa-circle'></i></span>
+                <span class="slider__dot" data-dot><i class='far fa-circle'></i></span>
+                <span class="slider__dot" data-dot><i class='far fa-circle'></i></span>
+                <span class="slider__dot" data-dot><i class='far fa-circle'></i></span>
+                <span class="slider__dot" data-dot><i class='far fa-circle'></i></span>
+            </div>
+            </div>
+        </div>
+        <script src="./js/index.js"></script>
+        <script>
+            const imageArr = [
+                './img/3.jpg',
+                './img/4.jpg',
+                './img/5.jpg',
+                './img/6.jpg',
+                './img/7.jpg',
+                './img/8.jpg',
+            ];
+
+            const slider = new Slider(imageArr);
+            slider.initializeSlider();
+
+        </script>
+
+
 
 
         <!-- gallery -->
@@ -100,9 +132,11 @@
                 <div class="article-wrapper" id="article-wrapper">
                     <article>
                         <h3 class="article-title">Metoda klasyczna 1:1</h3>
-                        <img src="img/metoda1.jpg" />
-                        <p>Jest to metoda przedłużenia rzęs naturalnych. Ponieważ metoda 1:1 polega na przyklejaniu pojedynczej rzęsy syntetycznej do jednej naturalnej, czyli każda naturalna rzęsa ma doklejona sztuczna. Efekt ten jest bardzo naturalny ale może być również bardzo spektakularny. Wszystko zależy od doboru rzęsy syntetycznej jak i również jaki efekt chce uzyskać klientka.
-                            Rzęsa syntetyczna daje duży efekt poniewaz cała od początku do końca jest czarna a rzęsa naturalna raczej nie ma pełnej czerni. Taka metoda utrzymuje się od 2-4 tyg. W zależności ile jest rzęs naturalnych. Więc zaleca się uzupełnianie właśnie w tym czasie. Sztuczne rzęsy są bardzo wygodna alternatywa na piękne spojrzenie o każdej porze dnia i nocy.</p>
+                        <div><img src="img/metoda1.jpg" /></div>
+                        <div class="paragraph">
+                            <p>Jest to metoda przedłużenia rzęs naturalnych. Ponieważ metoda 1:1 polega na przyklejaniu pojedynczej rzęsy syntetycznej do jednej naturalnej, czyli każda naturalna rzęsa ma doklejona sztuczna. Efekt ten jest bardzo naturalny ale może być również bardzo spektakularny. Wszystko zależy od doboru rzęsy syntetycznej jak i również jaki efekt chce uzyskać klientka.
+                                Rzęsa syntetyczna daje duży efekt poniewaz cała od początku do końca jest czarna a rzęsa naturalna raczej nie ma pełnej czerni. Taka metoda utrzymuje się od 2-4 tyg. W zależności ile jest rzęs naturalnych. Więc zaleca się uzupełnianie właśnie w tym czasie. Sztuczne rzęsy są bardzo wygodna alternatywa na piękne spojrzenie o każdej porze dnia i nocy.</p>
+                        </div>
                     </article>
                     <article>
                         <h3 class="article-title">Metoda objętościowa 2-6D</h3>
