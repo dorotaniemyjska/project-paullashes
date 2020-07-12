@@ -8,13 +8,12 @@ class Slider {
     this.currentSlide = 0;
     this.slideArrayLength = 0;
     this.slideCaption = null;
-    this.sliderDot = null;
+    
 
     this.UiSelectors = {
       slide: '[data-slide]',
       buttonPrev: '[data-button-prev]',
       buttonNext: '[data-button-next]',
-      
     };
   }
 
