@@ -32,9 +32,9 @@ class Slider {
     this.slide.appendChild(this.image);
 
     this.slideCaption = document.createElement('figcaption');
-    this.addCaption();
-    this.slideCaption.classList.add('slide__caption');
-    this.slide.appendChild(this.slideCaption);
+    // this.addCaption();
+    // this.slideCaption.classList.add('slide__caption');
+    // this.slide.appendChild(this.slideCaption);
 
     this.disableButtons();
     this.addListeners();
