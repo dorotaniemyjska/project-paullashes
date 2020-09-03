@@ -344,10 +344,11 @@ flex-direction: column;
     display: flex;
     justify-content: center;
     flex-direction: row;
+    margin: 0;
 }
 
 .wrapper-media {
-    /* padding: 20px; */
+    padding: 10px;
     margin: 0;
    width: 100%;
 
